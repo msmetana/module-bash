@@ -32,7 +32,7 @@
   run bash ex10.sh resources/text_4.txt
   [ "$status" -eq 0 ]
   [ "$output" = "14 resources/text_4.txt" ]
-} 
+}
 
 @test "only empty lines" {
   run bash ex10.sh resources/text_5.txt
