@@ -30,12 +30,12 @@ source ./ex06.sh
   [ "$output" = "" ]
 }
 
- @test 'cat with few params' {
-  run map cat test1 test2 test3 test4 test5
+@test 'cat with few params' {
+ run map cat test1 test2 test3 test4 test5
 
-  [ "$status" -eq 0 ]
-  [ "$output" = "" ]
- }
+ [ "$status" -eq 0 ]
+ [ "$output" = "" ]
+}
 
 @test 'rm' {
   run map rm map.txt
@@ -43,3 +43,4 @@ source ./ex06.sh
   [ "$status" -eq 0 ]
   ! [ map.txt -f  ]
 }
+
