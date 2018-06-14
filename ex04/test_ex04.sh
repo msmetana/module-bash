@@ -1,7 +1,7 @@
 #!/usr/bin/
 
 @test "Default" {
-  run bash ex04.sh Hello resources/text_1.txt 
+  run bash ex04.sh Hello resources/text_1.txt
 
   [ "$status" -eq 0 ]
   [ "$output" = "text_1.txt
@@ -26,8 +26,8 @@
 
 
 @test "Without second arg" {
- 
-  run bash ex04.sh Hello 
+
+  run bash ex04.sh Hello
 
   [ "$status" -eq 1 ]
   [ "$output" = '' ]
