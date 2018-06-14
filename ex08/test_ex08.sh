@@ -15,15 +15,15 @@
 }
 
 @test "Too few arguments" {
- run bash ex08.sh 
- 
+ run bash ex08.sh
+
  [ "$status" -eq 1 ]
  [ "$output" = "Too many(few) arguments" ]
 }
 
 @test "File doesn't exist" {
  run bash ex08.sh resources/digitfile
- 
+
  [ "$status" -eq 1 ]
  [ "$output" = "Error.." ]
 }
